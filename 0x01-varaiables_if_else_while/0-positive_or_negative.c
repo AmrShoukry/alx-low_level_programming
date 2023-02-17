@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	if($n < 0)
+	if ($n < 0)
 	{
 		printf("$n is negative\n");
 	}
