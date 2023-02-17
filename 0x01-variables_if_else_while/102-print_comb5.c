@@ -20,15 +20,18 @@ int main(void)
 			{
 				for (l = 48; l <= 57; l++)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(32);
-					putchar(k);
-					putchar(l);
-					if (!(i == 57 && j == 56))
+					if (i <= k && j < l)
 					{
-						putchar(44);
+						putchar(i);
+						putchar(j);
 						putchar(32);
+						putchar(k);
+						putchar(l);
+						if (!(i == 57 && j == 56 && k == 57 && l == 57))
+						{
+							putchar(44);
+							putchar(32);
+						}
 					}
 				}
 			}
