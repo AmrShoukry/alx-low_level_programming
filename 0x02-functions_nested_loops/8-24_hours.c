@@ -8,6 +8,26 @@
  * Return: Always 0 (Success)
  */
 
+/**
+ * hours_check - Entry point
+ *
+ * Description: 'Main function is used to print alphabets'
+ *
+ * @h: hours
+ *
+ * Return: Always 0 (Success)
+ */
+
+/**
+ * minutes_check - Entry point
+ *
+ * Description: 'Main function is used to print alphabets'
+ *
+ * @m: minutes
+ *
+ * Return: Always 0 (Success)
+ */
+
 void hours_check(int h)
 {
 	int temp, i;
