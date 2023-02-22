@@ -12,24 +12,24 @@
 int main()
 {
 	int i;
-	int numbers[50];
+	long numbers[50];
 
 	for (i = 0; i < 50; i++)
 	{
 		if (i == 0 || i == 1)
 		{
 			numbers[i] = i + 1;
-			printf("%i, ", numbers[i]);
+			printf("%l, ", numbers[i]);
 		}
 		else if (i != 49)
 		{
 			numbers[i] = numbers[i - 1] + numbers[i - 2];
-			printf("%i, ", numbers[i]);
+			printf("%l, ", numbers[i]);
 		}
 		else
 		{
 			numbers[i] = numbers[i - 1] + numbers[i - 2];
-			printf("%i\n", numbers[i]);
+			printf("%l\n", numbers[i]);
 		}
 	}
 
