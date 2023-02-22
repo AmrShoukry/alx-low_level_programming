@@ -18,16 +18,19 @@ void times_table(void)
 	{
 		for(j = 0; j < 10; j++)
 		{
-			printf("%i", i * j);
 			if (j != 9)
 			{
-				if (i * j >= 10)
+				if (j == 0)
 				{
-					printf(", ");
+					printf("0,")
+				}
+				else if (i * j >= 10)
+				{
+					printf(" %i," i * j);
 				}
 				else
 				{
-					printf(",  ");
+					printf("  %i, ", i * j);
 				}
 			}
 		}
