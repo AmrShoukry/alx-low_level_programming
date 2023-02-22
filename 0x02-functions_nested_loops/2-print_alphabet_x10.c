@@ -2,7 +2,7 @@
 
 
 /**
- * main - Entry point
+ * print_alphabet_x10 - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
@@ -22,5 +22,5 @@ void print_alphabet_x10(void)
 		}
 		_putchar('\n');
 	}
-	
+
 }
