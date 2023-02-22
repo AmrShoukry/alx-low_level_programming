@@ -3,7 +3,7 @@
 /**
  * _islower - Entry point
  *
- * @c: character 
+* @c: character 
  *
  * Description: 'Main function is used to print alphabets'
  *
