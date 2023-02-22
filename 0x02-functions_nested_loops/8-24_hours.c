@@ -10,7 +10,7 @@
 
 void hours_check(int h)
 {
-	int temp;
+	int temp, i;
 	char ch[2];
 
 	if (h < 10)
@@ -36,7 +36,7 @@ void hours_check(int h)
 
 void minutes_check(int m)
 {
-	int temp;
+	int temp, i;
 	char cm[2];
 
 	if (m < 10)
@@ -72,7 +72,7 @@ void jack_bauer(void)
 			
 			_putchar(':');	
 
-			minutes_checker(m);
+			minutes_check(m);
 			
 			_putchar('\n');
 		}
