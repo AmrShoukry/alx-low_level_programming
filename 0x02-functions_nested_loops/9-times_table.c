@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
  */
 
-void time_table(void)
+void times_table(void)
 {
 	int i, j;
 
