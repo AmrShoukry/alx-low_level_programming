@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * print_to_98 - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
@@ -23,7 +23,7 @@ void print_to_98(int n)
 			}
 			else
 			{
-				printf("%i, ", i); 
+				printf("%i, ", i);
 			}
 		}
 	}
@@ -39,6 +39,6 @@ void print_to_98(int n)
 			{
 				printf("%i, ", i);
 			}
-		}		
+		}
 	}
 }
