@@ -11,7 +11,7 @@
 void jack_bauer(void)
 {
 	int h, m;
-	char ch[], cm[];
+	char ch[2], cm[2];
 
 	for (h = 0; h < 24; h++)
 	{
@@ -33,11 +33,11 @@ void jack_bauer(void)
 
 			if (m < 10)
 			{
-				printf("0%i", m);
+				/* printf("0%i", m); */
 			}
 			else
 			{
-				printf("%i", m);
+				/* printf("%i", m); */
 			}
 			_putchar('\n');
 		}
