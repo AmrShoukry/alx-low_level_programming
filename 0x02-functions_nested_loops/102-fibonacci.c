@@ -19,17 +19,17 @@ int main()
 		if (i == 0 || i == 1)
 		{
 			numbers[i] = i + 1;
-			printf("%l, ", numbers[i]);
+			printf("%li, ", numbers[i]);
 		}
 		else if (i != 49)
 		{
 			numbers[i] = numbers[i - 1] + numbers[i - 2];
-			printf("%l, ", numbers[i]);
+			printf("%li, ", numbers[i]);
 		}
 		else
 		{
 			numbers[i] = numbers[i - 1] + numbers[i - 2];
-			printf("%l\n", numbers[i]);
+			printf("%li\n", numbers[i]);
 		}
 	}
 
