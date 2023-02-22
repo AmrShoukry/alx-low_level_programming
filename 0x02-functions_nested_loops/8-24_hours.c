@@ -12,6 +12,7 @@
 void jack_bauer(void)
 {
 	int h, m;
+	char ch, cm;
 
 	for (h = 0; h < 24; h++)
 	{
@@ -21,7 +22,8 @@ void jack_bauer(void)
 			{
 				_putchar(0);
 			}
-			_putchar(h);
+			ch = h + '0';
+			_putchar(ch);
 
 			_putchar(':');	
 
@@ -29,7 +31,8 @@ void jack_bauer(void)
 			{
 				_putchar(0);
 			}
-			_putchar(m);
+			cm = c + '0';
+			_putchar(cm);
 		}
 		_putchar('\n');
 	}
