@@ -1,10 +1,12 @@
-include "main.h"
+#include "main.h"
 
 
 /**
- * main - Entry point
+ * _isalpha - Entry point
  *
  * Description: 'Main function is used to print alphabets'
+ *
+ * @c: character
  *
  * Return: Always 0 (Success)
  */
