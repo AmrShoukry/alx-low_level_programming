@@ -31,7 +31,7 @@ void jack_bauer(void)
 			{
 				_putchar(0);
 			}
-			cm = c + '0';
+			cm = m + '0';
 			_putchar(cm);
 		}
 		_putchar('\n');
