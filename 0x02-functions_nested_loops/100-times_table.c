@@ -3,7 +3,7 @@
 
 
 /**
- * print_time_table - Entry point
+ * print_times_table - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
@@ -12,7 +12,7 @@
  * Return: Always 0 (Success)
  */
 
-void print_time_table(int n)
+void print_times_table(int n)
 {
 	int i, j;
 
