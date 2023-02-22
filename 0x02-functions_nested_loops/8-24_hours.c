@@ -13,7 +13,6 @@
 void jack_bauer(void)
 {
 	int h, m;
-	char ch, cm;
 
 	for (h = 0; h < 24; h++)
 	{
