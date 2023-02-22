@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 
 /**
@@ -22,17 +23,21 @@ void jack_bauer(void)
 			{
 				_putchar('0');
 			}
-			ch = h + '0';
-			_putchar(ch);
-
+			else
+			{
+				printf("%i", h);
+			}
+			
 			_putchar(':');	
 
 			if (m < 10)
 			{
 				_putchar('0');
 			}
-			cm = m + '0';
-			_putchar(cm);
+			else
+			{
+				printf("%i", m);
+			}
 			_putchar('\n');
 		}
 	}

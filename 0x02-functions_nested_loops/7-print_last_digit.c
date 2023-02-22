@@ -20,10 +20,6 @@ int print_last_digit(int n)
 	{
 		n = n * -1;	
 	}
-	if (n == INT_MIN)
-	{
-		n = 88;
-	}
 	last = n % 10;
 	l = last + '0';
 	_putchar(l);
