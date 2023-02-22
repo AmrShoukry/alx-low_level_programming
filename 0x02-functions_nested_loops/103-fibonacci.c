@@ -14,7 +14,7 @@ int main(void)
 	int sum = 0;
 	int previous = 1;
 	int current = 2;
-	int temp;	
+	int temp;
 
 	while (sum < 4000000)
 	{
