@@ -8,8 +8,11 @@
  * Return: Always 0 (Success)
  */
 
-void hours_check(void)
+void hours_check(int h)
 {
+	int temp;
+	char ch[2];
+
 	if (h < 10)
 	{
 		_putchar('0');
@@ -31,38 +34,45 @@ void hours_check(void)
 	}		
 }
 
+void minutes_check(int m)
+{
+	int temp;
+	char cm[2];
+
+	if (m < 10)
+	{
+		_putchar('0');
+		_putchar(m + '0');
+	}
+	else
+	{
+		temp = m;
+
+		for (i = 0; i < 2; i++)
+		{
+			cm[i] = (temp % 10) + '0';
+			temp = temp / 10;
+		} 
+		for (i = 1; i >= 0; i--)
+		{
+			_putchar(cm[i]);
+		}
+	}		
+}
+
 void jack_bauer(void)
 {
-	int h, m, i, temp;
-	char ch[2], cm[2];
+	int h, m;
 
 	for (h = 0; h < 24; h++)
 	{
 		for (m = 0; m < 60; m++)
 		{
-			hours_check();
+			hours_check(h);
 			
 			_putchar(':');	
 
-			if (m < 10)
-			{
-				_putchar('0');
-				_putchar(m + '0');
-			}
-			else
-			{
-				temp = m;
-
-				for (i = 0; i < 2; i++)
-				{
-					cm[i] = (temp % 10) + '0';
-					temp = temp / 10;
-				} 
-				for (i = 1; i >= 0; i--)
-				{
-					_putchar(cm[i]);
-				}
-			}
+			minutes_checker(m);
 			
 			_putchar('\n');
 		}
