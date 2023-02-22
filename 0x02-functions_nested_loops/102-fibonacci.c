@@ -1,4 +1,4 @@
-#include "main.h";
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -24,7 +24,7 @@ int main()
 		else if (i != 49)
 		{
 			numbers[i] = numbers[i - 1] + numbers[i - 2];
-			printf("%i, ", numbers[i];
+			printf("%i, ", numbers[i]);
 		}
 		else
 		{
