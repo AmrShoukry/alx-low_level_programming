@@ -12,11 +12,11 @@
 int main(void)
 {
 	int i = 3;
-	int previous = 1;
-	int current = 2;
-	int temp;
+	long int previous = 1;
+	long int current = 2;
+	long int temp;
 
-	printf("%i, %i, ", previous, current);
+	printf("%li, %li, ", previous, current);
 
 	while (i <= 98)
 	{
@@ -26,11 +26,11 @@ int main(void)
 
 		if (i == 98)
 		{
-			printf("%i\n", current);
+			printf("%li\n", current);
 		}
 		else
 		{
-			printf("%i, ", current);
+			printf("%li, ", current);
 		}
 
 		i = i + 1;
