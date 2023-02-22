@@ -28,12 +28,12 @@ void hours_check(int h)
 		{
 			ch[i] = (temp % 10) + '0';
 			temp = temp / 10;
-		} 
+		}
 		for (i = 1; i >= 0; i--)
 		{
 			_putchar(ch[i]);
 		}
-	}		
+	}
 }
 
 /**
@@ -65,12 +65,12 @@ void minutes_check(int m)
 		{
 			cm[i] = (temp % 10) + '0';
 			temp = temp / 10;
-		} 
+		}
 		for (i = 1; i >= 0; i--)
 		{
 			_putchar(cm[i]);
 		}
-	}		
+	}
 }
 
 /**
@@ -91,11 +91,11 @@ void jack_bauer(void)
 		for (m = 0; m < 60; m++)
 		{
 			hours_check(h);
-			
-			_putchar(':');	
+
+			_putchar(':');
 
 			minutes_check(m);
-			
+
 			_putchar('\n');
 		}
 	}
