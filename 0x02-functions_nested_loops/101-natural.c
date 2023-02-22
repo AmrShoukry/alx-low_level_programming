@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_natural - Entry point
+ * main - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
  * Return: Always 0 (Success)
  */
 
-void print_natural(void)
+int main(void)
 {
 	int i;
 	int sum = 0;
@@ -23,4 +23,6 @@ void print_natural(void)
 	}
 
 	printf("%i\n", sum);
+
+	return (0);
 }
