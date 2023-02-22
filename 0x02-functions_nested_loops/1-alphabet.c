@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
@@ -12,6 +12,7 @@
 void print_alphabet(void)
 {
 	char c;
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		_putchar(c);
