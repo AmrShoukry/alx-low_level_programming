@@ -1,8 +1,8 @@
-#include "main.h";
+#include "main.h"
 
 
 /**
- * main - Entry point
+ * jack_bauer - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
