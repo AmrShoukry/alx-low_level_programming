@@ -20,7 +20,7 @@ void jack_bauer(void)
 		{
 			if (h < 10)
 			{
-				_putchar('0');
+				printf("0%i", h);
 			}
 			else
 			{
@@ -31,7 +31,7 @@ void jack_bauer(void)
 
 			if (m < 10)
 			{
-				_putchar('0');
+				printf("0%i", m);
 			}
 			else
 			{
