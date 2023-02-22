@@ -2,7 +2,10 @@
 
 
 /**
- * main - Entry point
+ * add - Entry point
+ *
+ * @n1: number1
+ * @n2: number2
  *
  * Description: 'Main function is used to print alphabets'
  *
