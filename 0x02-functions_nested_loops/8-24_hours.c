@@ -1,29 +1,11 @@
 #include "main.h"
 
 /**
- * jack_bauer - Entry point
- *
- * Description: 'Main function is used to print alphabets'
- *
- * Return: Always 0 (Success)
- */
-
-/**
  * hours_check - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
  * @h: hours
- *
- * Return: Always 0 (Success)
- */
-
-/**
- * minutes_check - Entry point
- *
- * Description: 'Main function is used to print alphabets'
- *
- * @m: minutes
  *
  * Return: Always 0 (Success)
  */
@@ -54,6 +36,17 @@ void hours_check(int h)
 	}		
 }
 
+/**
+ * minutes_check - Entry point
+ *
+ * Description: 'Main function is used to print alphabets'
+ *
+ * @m: minutes
+ *
+ * Return: Always 0 (Success)
+ */
+
+
 void minutes_check(int m)
 {
 	int temp, i;
@@ -79,6 +72,15 @@ void minutes_check(int m)
 		}
 	}		
 }
+
+/**
+ * jack_bauer - Entry point
+ *
+ * Description: 'Main function is used to print alphabets'
+ *
+ * Return: Always 0 (Success)
+ */
+
 
 void jack_bauer(void)
 {
