@@ -1,8 +1,8 @@
-include "main.h"
+#include "main.h"
 
 
 /**
- * main - Entry point
+ * _islower - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
