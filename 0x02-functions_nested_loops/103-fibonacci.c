@@ -25,7 +25,7 @@ int main(void)
 
 		temp = current;
 		current = current + previous;
-		previous = temp		
+		previous = temp;
 	}
 
 	printf("%i\n", sum);
