@@ -3,7 +3,7 @@
 
 
 /**
- * main - Entry point
+ * times_table - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
@@ -16,7 +16,7 @@ void times_table(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		for(j = 0; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
 			if (j != 9)
 			{
@@ -37,7 +37,7 @@ void times_table(void)
 			{
 				if (i * j >= 10)
 				{
-					printf(" %i\n", i * j); 
+					printf(" %i\n", i * j);
 				}
 				else
 				{
