@@ -17,7 +17,7 @@ void time_table(void)
 	{
 		for(j = 0; j < 10; j++)
 		{
-			_putchar(i * j);
+			printf("%i", i * j);
 			if (j != 9)
 			{
 				_putchar(',');
