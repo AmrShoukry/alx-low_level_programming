@@ -2,7 +2,9 @@
 
 
 /**
- * main - Entry point
+ * print_last_digit - Entry point
+ *
+ * @n: number
  *
  * Description: 'Main function is used to print alphabets'
  *
