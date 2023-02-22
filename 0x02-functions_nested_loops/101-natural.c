@@ -11,6 +11,7 @@
 
 void print_natural(void)
 {
+	int i;
 	int sum = 0;
 
 	for (i = 1; i < 1024; i++)
@@ -21,5 +22,5 @@ void print_natural(void)
 		}
 	}
 
-	printf("%i\n"sum);
+	printf("%i\n", sum);
 }
