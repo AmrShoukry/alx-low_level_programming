@@ -10,7 +10,7 @@
 
 void jack_bauer(void)
 {
-	int h, m;
+	int h, m, i, temp;
 	char ch[2], cm[2];
 
 	for (h = 0; h < 24; h++)
@@ -24,9 +24,17 @@ void jack_bauer(void)
 			}
 			else
 			{
-				ch = h + '0';
-				_putchar(ch[0]);
-				_putchar(ch[1]);
+				temp = h;
+
+				for (i = 0; i < 2; i++)
+				{
+					ch[i] = (temp % 10) + '0';
+					temp = temp / 10;
+				} 
+				for (i = 1; i >= 0; i--)
+				{
+					_putchar(ch[i]);
+				}
 			}
 			
 			_putchar(':');	
@@ -37,8 +45,19 @@ void jack_bauer(void)
 			}
 			else
 			{
-				/* printf("%i", m); */
+				temp = m;
+
+				for (i = 0; i < 2; i++)
+				{
+					cm[i] = (temp % 10) + '0';
+					temp = temp / 10;
+				} 
+				for (i = 1; i >= 0; i--)
+				{
+					_putchar(cm[i]);
+				}
 			}
+			
 			_putchar('\n');
 		}
 	}
