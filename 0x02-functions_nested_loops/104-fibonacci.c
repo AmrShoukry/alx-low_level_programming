@@ -18,13 +18,13 @@ int main(void)
 
 	printf("%lu, %lu, ", previous, current);
 
-	while (i < 98)
+	while (i <= 98)
 	{
 		temp = current;
 		current = current + previous;
 		previous = temp;
 
-		if (i == 97)
+		if (i == 98)
 		{
 			printf("%lu\n", current);
 		}
