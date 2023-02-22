@@ -3,12 +3,13 @@
 /**
  * _islower - Entry point
  *
-* @c: character 
+ * @c: character 
  *
  * Description: 'Main function is used to print alphabets'
  *
  * Return: Always 0 (Success)
  */
+
 
 int _islower(int c)
 {
