@@ -2,7 +2,7 @@
 
 
 /**
- * main - Entry point
+ * print_natural - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
@@ -20,8 +20,6 @@ void print_natural(void)
 			sum = sum + i;
 		}
 	}
-	
-	_putchar(sum);
-	_putchar('\n');
 
+	printf("%i\n"sum);
 }
