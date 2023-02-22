@@ -30,10 +30,13 @@ void times_table(void)
 				}
 				else
 				{
-					printf("  %i, ", i * j);
+					printf("  %i,", i * j);
 				}
 			}
+			else
+			{
+				printf("%i\n", i * j);
+			}
 		}
-		printf("%c", '\n');
 	}
 }
