@@ -20,7 +20,7 @@ void jack_bauer(void)
 		{
 			if (h < 10)
 			{
-				_putchar(0);
+				_putchar('0');
 			}
 			ch = h + '0';
 			_putchar(ch);
@@ -29,7 +29,7 @@ void jack_bauer(void)
 
 			if (m < 10)
 			{
-				_putchar(0);
+				_putchar('0');
 			}
 			cm = m + '0';
 			_putchar(cm);
