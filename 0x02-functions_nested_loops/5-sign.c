@@ -4,6 +4,8 @@
 /**
  * main - Entry point
  *
+ * @n: number
+ *
  * Description: 'Main function is used to print alphabets'
  *
  * Return: Always 0 (Success)
