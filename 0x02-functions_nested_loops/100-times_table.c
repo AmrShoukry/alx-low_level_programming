@@ -1,10 +1,13 @@
 #include "main.h";
+#include <stdio.h>
 
 
 /**
- * main - Entry point
+ * print_time_table - Entry point
  *
  * Description: 'Main function is used to print alphabets'
+ *
+ * @n: number
  *
  * Return: Always 0 (Success)
  */
@@ -19,14 +22,25 @@ void print_time_table(int n)
 		{
 			for(j = 0; j < n; j++)
 			{
-				_putchar(i * j);
-				if (j != (n-1))
+				if (j == 0)
 				{
-					_putchar(',');
-					_putchar(' ');
+					printf("0");
 				}
+				else if (i * j < 10)
+				{
+					printf(",   %i", i * j);
+				}
+				else if (i * j >= 10 && i * j < 100)
+				{
+					printf(",  %i", i * j);
+				}
+				else if (i * j >= 100)
+				{
+					printf(", %i", i * j);
+				}
+				
 			}
-			_putchar('\n');
+			printf("\n");
 		}
 	}
 }
