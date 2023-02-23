@@ -12,11 +12,11 @@
 int main(void)
 {
 	int i = 3;
-	unsigned long long int previous = 1;
-	unsigned long long int current = 2;
-	unsigned long long int temp;
+	unsigned long int previous = 1;
+	unsigned long int current = 2;
+	unsigned long int temp;
 
-	printf("%llu, %llu, ", previous, current);
+	printf("%lu, %lu, ", previous, current);
 
 	while (i <= 98)
 	{
@@ -26,11 +26,11 @@ int main(void)
 
 		if (i == 98)
 		{
-			printf("%llu\n", current);
+			printf("%lu\n", current);
 		}
 		else
 		{
-			printf("%llu, ", current);
+			printf("%lu, ", current);
 		}
 
 		i = i + 1;
