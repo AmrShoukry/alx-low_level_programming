@@ -13,32 +13,13 @@
 
 void print_number(int n)
 {
-	int i;
-	int reversed = 0;
+	int i = n;
 
-	if (n == 0)
+	while (i > 0)
 	{
-		_putchar('0');
+		i = i % 10;
+		print_number(n / 10);
 	}
-	else
-	{
-		i = n;
 
-		if (n < 0)
-		{
-			_putchar('-');
-			i = n * -1;
-		}
-
-		while (i > 0)
-		{
-			reversed = (reversed * 10) + (i % 10);
-			i = i / 10;
-		}
-		while (reversed > 0)
-		{
-			_putchar(reversed % 10 + '0');
-			reversed = reversed / 10;
-		}
-	}
+	_putchar(i + '0');
 }
