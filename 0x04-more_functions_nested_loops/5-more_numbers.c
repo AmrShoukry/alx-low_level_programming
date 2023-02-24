@@ -11,13 +11,18 @@
 
 void more_numbers(void)
 {
-	int i, j;
+	int i, j, temp;
 
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 15; j++)
 		{
-			_putchar(j + '0');
+			temp = j
+			while (temp > 0)
+			{
+				_putchar(temp % 10 + '0');
+				temp = temp / 10;
+			}
 		}
 
 		_putchar('\n');
