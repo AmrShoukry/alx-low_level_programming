@@ -33,7 +33,7 @@ int main(void)
 		}
 	}
 
-	printf("%li\n", i);
+	printf("%li\n", max);
 
 	return (0);
 }
