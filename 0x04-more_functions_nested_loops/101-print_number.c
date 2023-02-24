@@ -21,9 +21,10 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	while (i > 0)
+	while (n > 0)
 	{
 		i = i % 10;
+		n = n / 10;
 		print_number(n / 10);
 	}
 
