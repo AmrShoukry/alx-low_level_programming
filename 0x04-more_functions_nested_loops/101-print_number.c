@@ -22,7 +22,6 @@ void print_number(int n)
 		i = -n;
 		_putchar('-');
 	}
-	else
 
 	if (i / 10 > 0)
 	{
