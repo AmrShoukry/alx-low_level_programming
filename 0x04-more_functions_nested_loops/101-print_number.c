@@ -16,17 +16,19 @@ void print_number(int n)
 	int i;
 	int reversed = 0;
 
-	if (n < 0)
-	{
-		_putchar('-');
-		i = n * -1;
-	}
-	else if (n == 0)
+	if (n == 0)
 	{
 		_putchar('0');
 	}
 	else
 	{
+
+		if (n < 0)
+		{
+			_putchar('-');
+			i = n * -1;
+		}
+
 		i = n;
 
 		while (i > 0)
