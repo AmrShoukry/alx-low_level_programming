@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - Entry point
+ * more_numbers - Entry point
  *
  * Description: 'Main function is used to print alphabets'
  *
@@ -9,7 +9,7 @@
  */
 
 
-void print_numbers(void)
+void more_numbers(void)
 {
 	int i, j;
 
