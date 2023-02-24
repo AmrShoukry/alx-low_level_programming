@@ -40,6 +40,4 @@ void print_number(int n)
 			reversed = reversed / 10;
 		}
 	}
-
-	_putchar('\n');
 }
