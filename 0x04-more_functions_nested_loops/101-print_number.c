@@ -14,6 +14,12 @@
 void print_number(int n)
 {
 	int i = n;
+	
+	if (i < 0)
+	{
+		i = n * -1;
+		_putchar('-');
+	}
 
 	while (i > 0)
 	{
