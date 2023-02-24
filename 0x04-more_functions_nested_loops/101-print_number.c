@@ -22,14 +22,13 @@ void print_number(int n)
 	}
 	else
 	{
+		i = n;
 
 		if (n < 0)
 		{
 			_putchar('-');
 			i = n * -1;
 		}
-
-		i = n;
 
 		while (i > 0)
 		{
