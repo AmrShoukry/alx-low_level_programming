@@ -31,8 +31,8 @@ void print_number(int n)
 
 		while (i > 0)
 		{
-			reversed = (reversed * 10) + (n % 10);
-			n = n / 10;
+			reversed = (reversed * 10) + (i % 10);
+			i = i / 10;
 		}
 		while (reversed > 0)
 		{
