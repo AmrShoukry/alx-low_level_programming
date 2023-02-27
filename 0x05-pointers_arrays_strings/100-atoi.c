@@ -42,7 +42,7 @@ int _atoi(char *s)
 		}
 
 		counter++;
-		current = str[counter];
+		current = s[counter];
 	}
 
 	printf("\n");
