@@ -6,7 +6,7 @@
  *
  * Description: 'Function'
  *
- * @*n: pointer
+ * @n: pointer
  *
  * Return: Always 0.
  */
