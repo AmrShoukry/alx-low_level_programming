@@ -46,4 +46,6 @@ int _atoi(char *s)
 	}
 
 	printf("\n");
+
+	return (0);
 }
