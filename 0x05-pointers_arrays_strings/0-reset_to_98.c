@@ -4,6 +4,8 @@
 /**
  * reset_to_98 - check the code
  *
+ * Description: 'Function'
+ *
  * Return: Always 0.
  */
 
