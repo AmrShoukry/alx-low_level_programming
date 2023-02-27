@@ -26,7 +26,7 @@ int _atoi(char *s)
 
 		else if (numberTrue == 0 && (current >= 48 && current <= 57))
 		{
-			if (str[counter - 1] == '-')
+			if (s[counter - 1] == '-')
 			{
 				printf("-");
 			}
