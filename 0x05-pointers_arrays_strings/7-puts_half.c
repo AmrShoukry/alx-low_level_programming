@@ -34,6 +34,7 @@ void puts_half(char *str)
 	}
 	else
 	{
+		printf("55555");
 		for (i = (counter - 1) / 2; i < counter; i++)
 		{
 			printf("%c", str[i]);
