@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * _strlen - check the code
+ * _puts - check the code
  *
  * Description: 'Function'
  *
- * @s: string
+ * @str: string
  *
  * Return: Always 0.
  */
