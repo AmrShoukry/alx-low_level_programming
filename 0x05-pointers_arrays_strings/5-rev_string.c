@@ -33,7 +33,12 @@ void rev_string(char *s)
 		temp = s[j];
 		s[j] = s[i];
 		s[i] = temp;
-		printf("%c", s[j]);
 		j++;
 	}
+
+	for(i = 0; i < counter; i++)
+	{
+		printf("%c", s[i]);
+	}
+
 }
