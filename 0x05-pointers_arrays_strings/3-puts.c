@@ -18,9 +18,9 @@ void _puts(char *str)
 
 	while (current != '\0')
 	{
-		current = str[counter];
 		printf("%c", current);
 		counter++;
+		current = str[counter];
 	}
 
 	printf("\n");
