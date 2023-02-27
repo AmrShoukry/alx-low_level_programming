@@ -11,7 +11,7 @@
  * Return: Always 0.
  */
 
-void _atoi(char *s)
+int _atoi(char *s)
 {
 	int counter = 0;
 	char current = str[counter];
