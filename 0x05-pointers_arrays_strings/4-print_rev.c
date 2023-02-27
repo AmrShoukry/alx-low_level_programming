@@ -25,7 +25,7 @@ void print_rev(char *str)
 
 	for (i = counter - 1; i >= 0; i--)
 	{
-		printf("%c", str[counter]);
+		printf("%c", str[i]);
 	}
 
 	printf("\n");
