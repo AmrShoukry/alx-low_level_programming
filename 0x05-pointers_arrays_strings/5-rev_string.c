@@ -29,6 +29,7 @@ void rev_string(char *s)
 	for (i = counter - 1; i >= 0; i--)
 	{
 		newString[j] = s[i];
+		printf("%c", newString[j]);
 		j++;
 	}
 
