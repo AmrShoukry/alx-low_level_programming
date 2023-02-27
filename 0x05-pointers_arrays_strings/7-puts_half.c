@@ -23,6 +23,8 @@ void puts_half(char *str)
 		current = str[counter];
 	}
 
+	printf("%i", counter);
+
 	if (counter % 2 == 0)
 	{
 		for (i = counter / 2; i < counter; i++)
