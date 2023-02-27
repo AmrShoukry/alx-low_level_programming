@@ -20,7 +20,6 @@ void rev_string(char *s)
 
 	while (current != '\0')
 	{
-		printf("%c", current);
 		counter++;
 		current = s[counter];
 	}
