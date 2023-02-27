@@ -16,7 +16,7 @@ void rev_string(char *s)
 	int i, j;
 	int counter = 0;
 	char current = s[counter];
-	char *newString[100];
+	char *newString[] = "";
 
 	while (current != '\0')
 	{
