@@ -26,6 +26,8 @@ void rev_string(char *s)
 
 	j = 0;
 
+	printf("%i", counter);
+
 	for (i = counter; i >= counter / 2; i--)
 	{
 		temp = s[j];
