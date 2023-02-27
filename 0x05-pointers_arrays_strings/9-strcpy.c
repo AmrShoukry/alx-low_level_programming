@@ -20,8 +20,8 @@ char *_strcpy(char *dest, char *src)
 
 	while (src[counter] != '\0')
 	{
-		current = src[counter];
 		counter++;
+		current = src[counter];
 	}
 	
 	for (i = 0; i < counter; i++)
