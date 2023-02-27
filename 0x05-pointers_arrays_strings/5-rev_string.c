@@ -15,7 +15,7 @@ void rev_string(char *s)
 {
 	int i, j;
 	int counter = 0;
-	char current = str[counter];
+	char current = s[counter];
 	char *newString;
 
 	while (current != '\0')
