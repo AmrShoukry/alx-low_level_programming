@@ -14,7 +14,7 @@
 int _atoi(char *s)
 {
 	int counter = 0;
-	char current = str[counter];
+	char current = s[counter];
 	bool number;
 
 	while (current != '\0')
@@ -31,14 +31,14 @@ int _atoi(char *s)
 				printf("-");
 			}
 
-			printf("%c", str[counter]);
+			printf("%c", current);
 
 			number = true;
 		}
 
 		else if (number == true)
 		{
-			printf("%c", str[counter]);
+			printf("%c", current);
 		}
 
 		counter++;
