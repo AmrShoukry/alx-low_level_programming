@@ -14,10 +14,11 @@
 void _puts(char *str)
 {
 	int counter = 0;
-	char current = str[0];
+	char current = str[counter];
 
 	while (current != '\0')
 	{
+		current = str[counter];
 		printf("%c", current);
 		counter++;
 	}
