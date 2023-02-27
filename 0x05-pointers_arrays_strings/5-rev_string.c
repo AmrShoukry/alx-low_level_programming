@@ -28,7 +28,7 @@ void rev_string(char *s)
 
 	printf("%i", counter);
 
-	for (i = counter; i >= counter / 2; i--)
+	for (i = counter - 1; i >= counter / 2; i--)
 	{
 		temp = s[j];
 		s[j] = s[i];
