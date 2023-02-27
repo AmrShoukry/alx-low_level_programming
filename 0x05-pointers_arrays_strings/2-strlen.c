@@ -11,7 +11,7 @@
  * Return: Always 0.
  */
 
-void _strlen(int *s)
+int _strlen(int *s)
 {
 	int counter = 0;
 	char current = '0';
