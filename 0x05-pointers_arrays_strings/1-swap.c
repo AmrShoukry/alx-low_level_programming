@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - check the code
+ * swap_int - check the code
  *
  * Description: 'Function'
  *
- * @n: pointer
+ * @a: pointer1
+ * @b: pointer2
  *
  * Return: Always 0.
  */
