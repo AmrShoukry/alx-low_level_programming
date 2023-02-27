@@ -33,5 +33,8 @@ void rev_string(char *s)
 		j++;
 	}
 
-	*s = *newString;
+	for (i = 0; i < counter; i++)
+	{
+		s[counter] = newString[counter];
+	}
 }
