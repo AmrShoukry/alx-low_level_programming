@@ -16,10 +16,9 @@ char *_strcpy(char *dest, char *src)
 {
 	int i;
 	int counter = 0;
-	char current = 'A';
-	current = 'B';
+	char current = src[counter];
 
-	while (src[counter] != '\0')
+	while (counter != '\0')
 	{
 		counter++;
 		current = src[counter];
