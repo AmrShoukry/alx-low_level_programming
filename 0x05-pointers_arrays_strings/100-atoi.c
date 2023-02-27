@@ -15,16 +15,16 @@ int _atoi(char *s)
 {
 	int counter = 0;
 	char current = s[counter];
-	bool number;
+	int numberTrue = 0;
 
 	while (current != '\0')
 	{
-		if (number == true && !(current >= 48 && current <= 57))
+		if (numberTrue == 1 && !(current >= 48 && current <= 57))
 		{
 			break;
 		}
 
-		else if (number == false && (current >= 48 && current <= 57))
+		else if (numberTrue == 0 && (current >= 48 && current <= 57))
 		{
 			if (str[counter - 1] == '-')
 			{
@@ -33,10 +33,10 @@ int _atoi(char *s)
 
 			printf("%c", current);
 
-			number = true;
+			numberTrue = 1;
 		}
 
-		else if (number == true)
+		else if (numberTrue == 1)
 		{
 			printf("%c", current);
 		}
