@@ -17,13 +17,14 @@ char *_strcpy(char *dest, char *src)
 	int i;
 	int counter = 0;
 	char current = 'A';
+	current = 'B';
 
 	while (src[counter] != '\0')
 	{
 		counter++;
 		current = src[counter];
 	}
-	
+
 	for (i = 0; i < counter; i++)
 	{
 		dest[i] = src[i];
