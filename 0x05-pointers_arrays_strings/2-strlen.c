@@ -16,12 +16,10 @@ int _strlen(char *s)
 	int counter = 0;
 	char current = '0';
 
-	do
-	{
+	do {
 		current = s[counter];
 		counter++;
 	} while (current != '\0');
 
-	return counter - 1;
-
+	return (counter - 1);
 }
