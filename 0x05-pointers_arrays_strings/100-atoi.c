@@ -44,7 +44,5 @@ int _atoi(char *s)
 		counter++;
 	}
 
-	printf("\n");
-
-	return (0);
+	return (number);
 }
