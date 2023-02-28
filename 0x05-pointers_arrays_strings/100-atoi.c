@@ -14,7 +14,6 @@
 int _atoi(char *s)
 {
 	int counter = 0;
-	int digitCount = 1;
 	int sign = 1;
 	unsigned int num = 0;
 
@@ -29,8 +28,7 @@ int _atoi(char *s)
 
 	while (s[counter] != '\0' && (s[counter] >= 48 && s[counter] <= 57))
 	{
-		num = (num * digitCount) + s[counter] - 48;
-		digitCount = digitCount * 10;
+		num = (num * 10) + s[counter] - 48;
 		counter++;
 	}
 
