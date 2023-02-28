@@ -15,7 +15,8 @@ int _atoi(char *s)
 {
 	int counter = 0;
 	int numberTrue = 0;
-	int number;
+	int digitCount = 0;
+	int number = 0;
 
 	while (s[counter] != '\0')
 	{
@@ -26,21 +27,18 @@ int _atoi(char *s)
 
 		else if (numberTrue == 0 && (s[counter] >= 48 && s[counter] <= 57))
 		{
+			numberTrue = 1;
+			number = (number * digitCount) + s[counter] - 48;
+
 			if (s[counter - 1] == '-')
 			{
-				printf("-");
+				number = number * -1;
 			}
-
-			printf("%c", s[counter]);
-			number = s[counter] - 48;
-			printf("%i", number);
-
-			numberTrue = 1;
 		}
 
 		else if (numberTrue == 1)
 		{
-			printf("%c", s[counter]);
+			number = (number * digitCount) + s[counter] - 48;
 		}
 
 		counter++;
