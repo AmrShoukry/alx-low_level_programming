@@ -15,6 +15,7 @@ int _atoi(char *s)
 {
 	int counter = 0;
 	int numberTrue = 0;
+	int number;
 
 	while (s[counter] != '\0')
 	{
@@ -31,6 +32,8 @@ int _atoi(char *s)
 			}
 
 			printf("%c", s[counter]);
+			number = s[counter] - 48;
+			printf("%i", number);
 
 			numberTrue = 1;
 		}
