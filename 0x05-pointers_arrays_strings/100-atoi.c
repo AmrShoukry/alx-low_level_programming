@@ -37,11 +37,10 @@ int _atoi(char *s)
 
 		else if (numberTrue == 1)
 		{
-			printf("%c", current);
+			printf("%c", s[counter]);
 		}
 
 		counter++;
-		current = s[counter];
 	}
 
 	printf("\n");
