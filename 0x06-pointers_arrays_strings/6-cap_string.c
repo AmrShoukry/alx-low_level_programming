@@ -20,6 +20,11 @@ char *cap_string(char *string)
 
 	while (string[i] != '\0')
 	{
+		if (i == 0 && string[i] >= 'a' && string[i] <= 'z')
+		{
+			string[i] = string[i] - 32;
+		}
+
 		for (j = 0; j < 13; j++)
 		{
 			if (string[i] == separators[j])
