@@ -20,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 	int destCounter = 0;
 	char current = src[srcCounter];
 
-	while (srcCounter != 5)
+	while (srcCounter != n)
 	{
 		srcCounter++;
 		current = src[srcCounter];
