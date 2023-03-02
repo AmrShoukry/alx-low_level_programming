@@ -6,26 +6,26 @@
  *
  * Description: 'Function'
  *
- * @dest: string
- * @src: string
+ * @s1: string
+ * @s2: string
  *
  * Return: Always 0.
  */
 
-int _strcmp(char *dest, char *src)
+int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
 
-	while (dest[i] == src[i] && dest[i] != '\0')
+	while (s1[i] == s2[i] && s1[i] != '\0')
 	{
 		i++;
 	}
 	
-	if (dest[i] < src[i])
+	if (s1[i] < s2[i])
 	{
 		return (-15);
 	}
-	else if (dest[i] > src[i])
+	else if (s1[i] > s2[i])
 	{
 		return (15);
 	}
