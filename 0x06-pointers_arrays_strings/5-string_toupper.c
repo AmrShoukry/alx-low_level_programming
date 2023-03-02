@@ -20,7 +20,7 @@ char *string_toupper(char *string)
 			*string -= 32;
 		}
 
-		*string++;
+		string++;
 	}
 
 	return (string);
