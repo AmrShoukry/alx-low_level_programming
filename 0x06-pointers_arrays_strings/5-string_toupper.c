@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _string_toupper - check the code
+ * string_toupper - check the code
  *
  * Description: 'Function'
  *
