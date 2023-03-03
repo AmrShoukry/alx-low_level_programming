@@ -14,23 +14,18 @@
 void print_number(int n)
 {
 
-	int n2 = n;
+	unsigned int n1;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n2 = -n;
+		n1 = -n;
 	}
 
-
-	else if (n == 0)
+	if (n1 / 10 > 0)
 	{
-		_putchar('0');
+		print_number(n1 / 10);
 	}
 
-	if (n2 / 10 > 0)
-	{
-		print_number(n2 / 10);
-		_putchar((n2 % 10) + '0');
-	}
+	_putchar((n1 % 10) + '0');
 }
