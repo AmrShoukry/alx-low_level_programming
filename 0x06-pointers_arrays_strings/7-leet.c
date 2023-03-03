@@ -31,3 +31,6 @@ char *leet(char *string)
 
 		i++;
 	}
+
+	return (string);
+}
