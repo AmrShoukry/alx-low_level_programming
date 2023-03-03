@@ -6,15 +6,14 @@
  *
  * Description: 'Function'
  *
- * @string: string
+ * @c: string
  *
  * Return: Always 0.
  */
 
-char *leet(char *string)
+char *leet(char *c)
 {
 	int i = 0;
-	char c = string;
 
 	while (c[i] != '\0')
 	{
@@ -34,5 +33,5 @@ char *leet(char *string)
 		i++;
 	}
 
-	return (string);
+	return (c);
 }
