@@ -15,7 +15,7 @@ char *leet(char *string)
 {
 	char AlphaLower[] = {'a', 'e', 'o', 't', 'l'};
 	char AlphaUpper[] = {'A', 'E', 'O', 'T', 'L'};
-	char newNumber = {'4', '3', '0', '7', '1'};
+	char newNumber[] = {'4', '3', '0', '7', '1'};
 	int i = 0;
 	int j = 0;
 
