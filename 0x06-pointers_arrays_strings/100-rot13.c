@@ -14,18 +14,19 @@
 char *leet(char *string)
 {
 	int i = 0;
+	char c = string;
 
-	while (string[i] != '\0')
+	while (c[i] != '\0')
 	{
-		while ((string[i] >= 65 && string[i] <= 90) || (string[i] >= 97 && string[i] <= 122))
+		while ((c[i] >= 65 && c[i] <= 90) || (c[i] >= 97 && c[i] <= 122))
 		{
-			if ((string[i] >= 65 && string[i] <= 77) || (string[i] >= 97 && string[i] <= 109))
+			if ((c[i] >= 65 && c[i] <= 77) || (c[i] >= 97 && c[i] <= 109))
 			{
-				string[i] += 13;
+				c[i] += 13;
 			}
 			else
 			{
-				string[i] -= 13;
+				c[i] -= 13;
 			}
 			break;
 		}
