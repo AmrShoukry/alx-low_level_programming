@@ -13,20 +13,24 @@
 
 void print_number(int n)
 {
+
+	int n2 = n;
+
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		n2 = -n;
 	}
+
 
 	else if (n == 0)
 	{
 		_putchar('0');
 	}
 
-	if (n / 10 > 0)
+	if (n2 / 10 > 0)
 	{
-		print_number(n / 10);
-		_putchar((n % 10) + '0');
+		print_number(n2 / 10);
+		_putchar((n2 % 10) + '0');
 	}
 }
