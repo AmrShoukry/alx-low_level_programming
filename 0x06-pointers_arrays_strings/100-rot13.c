@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * leet - check the code
+ * rot13 - check the code
  *
  * Description: 'Function'
  *
@@ -11,7 +11,7 @@
  * Return: Always 0.
  */
 
-char *leet(char *c)
+char *rot13(char *c)
 {
 	int i = 0;
 
