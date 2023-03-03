@@ -27,6 +27,7 @@ char *leet(char *string)
 			{
 				string[i] -= 13;
 			}
+			break;
 		}
 
 		i++;
