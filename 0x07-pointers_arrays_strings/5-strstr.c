@@ -12,7 +12,7 @@
  * Return: Always 0.
  */
 
-char * _strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
