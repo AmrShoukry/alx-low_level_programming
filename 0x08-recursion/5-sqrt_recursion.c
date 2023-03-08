@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 
 int sqrt_check(int n, int checker)
 {
-	if (checker < n)
+	if (checker <= n)
 	{
 		if (checker * checker == n)
 		{
