@@ -50,5 +50,5 @@ int palindrome_check(char *s, int start, int end)
 
 int is_palindrome(char *s)
 {
-	return palindrome_check(s, 0, strlen(s) - 1);
+	return (palindrome_check(s, 0, strlen(s) - 1));
 }
