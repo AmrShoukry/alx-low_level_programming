@@ -16,7 +16,7 @@
 
 int wild_checker(char *s1, char *s2, int s1_counter, int s2_counter)
 {
-	if (s1[s1_counter] != '\0' && s2[s2_counter] != '\0')
+	if (s1[s1_counter] != '\0' || s2[s2_counter] != '\0')
 	{
 		if (s2[s2_counter] == '*')
 		{
