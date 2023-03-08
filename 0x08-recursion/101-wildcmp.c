@@ -20,7 +20,7 @@ int wild_checker(char *s1, char *s2, int s1_counter, int s2_counter)
 	{
 		if (s2[s2_counter] == '*')
 		{
-			printf("i'm wild! s1:%c, s2:%c\n", s1, s2);
+			printf("i'm wild! s1:%c, s2:%c\n", s1[s1_counter], s2[s2_counter]);
 			return (wild_checker(s1, s2, s1_counter, s2_counter + 1));
 		}
 
@@ -28,29 +28,29 @@ int wild_checker(char *s1, char *s2, int s1_counter, int s2_counter)
 		{
 			if (s2[s2_counter - 1] == '*')
 			{
-				printf("previous is wild! s1:%c, s2:%c\n", s1, s2);
+				printf("previous is wild! s1:%c, s2:%c\n", s1[s1_counter], s2[s2_counter]);
 				return (wild_checker(s1, s2, s1_counter + 1, s2_counter));
 			}
 			else
 			{
-				printf("we are not the same! s1:%c, s2:%c\n", s1, s2);
+				printf("we are not the same! s1:%c, s2:%c\n", s1[s1_counter], s2[s2_counter]);
 				return (0);
 			}
 		}
 		else
 		{
-			printf("we are matched! s1:%c, s2:%c\n", s1, s2);
+			printf("we are matched! s1:%c, s2:%c\n", s1[s1_counter], s2[s2_counter]);
 			return (wild_checker(s1, s2, s1_counter + 1, s2_counter + 1 ));
 		}
 	}
 
 	if (s2[s2_counter] == '\0')
 	{
-		printf("s2 is over! s1:%c, s2:%c\n", s1, s2);
+		printf("s2 is over! s1:%c, s2:%c\n", s1[s1_counter], s2[s2_counter]);
 		return (1);
 	}
 	
-	printf("s1 and s2 are over! s1:%c, s2:%c\n", s1, s2);
+	printf("s1 and s2 are over! s1:%c, s2:%c\n", s1[s1_counter], s2[s2_counter]);
 	return (0);
 }
 
