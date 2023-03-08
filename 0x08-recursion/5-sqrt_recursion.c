@@ -11,6 +11,8 @@
  * Return: Always 0.
  */
 
+int *prime_numbers(int n);
+
 int _sqrt_recursion(int n)
 {
 	int primes[] = prime_numbers(n);
