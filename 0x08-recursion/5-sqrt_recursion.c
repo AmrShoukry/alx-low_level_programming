@@ -2,21 +2,15 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - check the code
+ * sqrt_check - check the code
  *
  * Description: 'Function'
  *
  * @n: number
+ * @checker: number
  *
  * Return: Always 0.
  */
-
-int sqrt_check(int n, int checker);
-
-int _sqrt_recursion(int n)
-{
-	return (sqrt_check(n, 1));
-}
 
 int sqrt_check(int n, int checker)
 {
@@ -35,5 +29,19 @@ int sqrt_check(int n, int checker)
 	{
 		return (-1);
 	}
-	
+}
+
+/**
+ * _sqrt_recursion - check the code
+ *
+ * Description: 'Function'
+ *
+ * @n: number
+ *
+ * Return: Always 0.
+ */
+
+int _sqrt_recursion(int n)
+{
+	return (sqrt_check(n, 1));
 }
