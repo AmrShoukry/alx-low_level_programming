@@ -2,43 +2,25 @@
 #include <stdio.h>
 
 /**
- * _strspn - check the code
- *
- * Description: 'Function'
- *
- * @s: string
- * @accept: character
+ * main - check the code
  *
  * Return: Always 0.
  */
-
-unsigned int _strspn(char *s, char *accept)
+int main(void)
 {
-	unsigned int i = 0;
-	unsigned int j = 0;
-	unsigned int counter = 0;
-
-	while (s[i] != '\0')
-	{
-		j = 0;
-		while (accept[j] != '\0')
-		{
-			if (s[i] == accept[j])
-			{
-				counter++;
-				break;
-			}
-
-			j++;
-		}
-
-		if (accept[j] == '\0')
-		{
-			return (counter);
-		}
-
-		i++;
-	}
-
-	return (counter);
+    int c3[3][3] = {
+        {0, 1, 5},
+        {10, 11, 12},
+        {1000, 101, 102},
+    };
+    int c5[5][5] = {
+        {0, 1, 5, 12124, 1234},
+        {10, 11, 12, 123521, 12512},
+        {1000, 101, 102, 12545, 214543435},
+        {100, 1012451, 11102, 12545, 214543435},
+        {10, 12401, 10452, 11542545, 1214543435},
+    };
+    print_diagsums((int *)c3, 3);
+    print_diagsums((int *)c5, 5);
+    return (0);
 }
