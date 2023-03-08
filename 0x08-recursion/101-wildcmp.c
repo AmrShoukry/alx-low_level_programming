@@ -23,7 +23,7 @@ int wild_checker(char *s1, char *s2, int s1_counter, int s2_counter)
 			return (wild_checker(s1, s2, s1_counter, s2_counter + 1));
 		}
 
-		else if (s2[s2_counter] != s1[s1_counter])
+		if (s2[s2_counter] != s1[s1_counter])
 		{
 			if (s2[s2_counter - 1] == '*')
 			{
@@ -33,6 +33,10 @@ int wild_checker(char *s1, char *s2, int s1_counter, int s2_counter)
 			{
 				return (0);
 			}
+		}
+		else
+		{
+			return (wild_checker(s1, s2, s1_counter + 1, s2_counter + 1 );
 		}
 	}
 
