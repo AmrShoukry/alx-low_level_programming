@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
+/**
  * palindrome_check - check the code
  *
  * Description: 'Function'
@@ -12,7 +12,7 @@
  * @end: number
  *
  * Return: Always 0
-*/
+ */
 
 int palindrome_check(char *s, int start, int end)
 {
