@@ -15,7 +15,7 @@ int sqrt_check(int n, int checker);
 
 int _sqrt_recursion(int n)
 {
-	int value = sqrt_check(n, 1);
+	return (sqrt_check(n, 1));
 }
 
 int sqrt_check(int n, int checker)
@@ -24,7 +24,7 @@ int sqrt_check(int n, int checker)
 	{
 		if (checker * checker == n)
 		{
-			return (chekcer);
+			return (checker);
 		}
 		else
 		{
