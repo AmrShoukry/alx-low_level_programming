@@ -11,34 +11,29 @@
  * Return: Always 0.
  */
 
-int *prime_numbers(int n);
-/*
+int sqrt_check(int n, int checker);
+
 int _sqrt_recursion(int n)
 {
-	int primes[] = prime_numbers(n);
+	int value = sqrt_check(n, 1);
 }
-*/
-int *prime_numbers(int n)
-{
-	int number = n;
-	int prime = 2;
-	int counter = 0;
-	int primes[];
 
-	while (number > 0)
+int sqrt_check(int n, int checker)
+{
+	if (checker < n)
 	{
-		if (number % prime == 0)
+		if (checker * checker == n)
 		{
-			primes[counter] = prime;
-			counter++;
-			prime = 2;
-			number = number / prime;
+			return (chekcer);
 		}
 		else
 		{
-			prime++;
+			return (sqrt_check(n, checker + 1));
 		}
 	}
-
-	return (primes);
+	else
+	{
+		return (-1);
+	}
+	
 }
