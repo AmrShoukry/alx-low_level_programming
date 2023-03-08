@@ -14,6 +14,11 @@
 
 int prime_check(int n, int checker)
 {
+	if (n < 0)
+	{
+		return (0);
+	}
+
 	if (checker < n)
 	{
 		if (n % checker == 0)
@@ -27,7 +32,7 @@ int prime_check(int n, int checker)
 	}
 	else
 	{
-		return (0);
+		return (1);
 	}
 }
 
