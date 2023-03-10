@@ -14,16 +14,19 @@
 
 int main(int argc, char *argv[])
 {
+	int n1;
+	int n2;
+
 	if (argc != 3)
-	{
-		int n1 = atoi(argv[1]);
-		int n2 = atoi(argv[2]);
-		printf("%i\n", n1 * n2);
-		return (0);
-	}
-	else
 	{
 		printf("Error\n");
 		return (1);
+	}
+	else
+	{
+		n1 = argv[1];
+		n2 = argv[2];
+		printf("%i\n", n1 * n2);
+		return (0);
 	}
 }
