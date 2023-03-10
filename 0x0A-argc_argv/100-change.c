@@ -23,12 +23,6 @@ int main(int argc, char *argv[])
 	{
 		money = atoi(argv[1]);
 
-		if ((money == 0 && argv[1][0] == '0' && argv[1][1] == '\0'))
-		{
-			printf("Error\n");
-			return (1);
-		}
-
 		if (money < 0)
 			money = 0;
 
