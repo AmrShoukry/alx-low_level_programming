@@ -21,13 +21,13 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-		if ((atoi(argv[1]) == 0 && argv[1][0] == '0' && argv[1][1] == '\0') || atoi(argv[1]) < 0)
+		money = atoi(argv[1]);
+
+		if ((money == 0 && argv[1][0] == '0' && argv[1][1] == '\0') || money < 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
-
-		money = atoi(argv[1]);
 
 		while (money < coins[i] && money != 0 && i < 5)
 		{
