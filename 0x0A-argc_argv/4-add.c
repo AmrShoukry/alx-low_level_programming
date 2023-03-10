@@ -34,4 +34,4 @@ int main(int argc, char *argv[])
 	printf("%i\n", sum);
 
 	return (0);
-}i
+}
