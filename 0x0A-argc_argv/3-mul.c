@@ -24,8 +24,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		n1 = argv[1];
-		n2 = argv[2];
+		n1 = atoi(argv[1]);
+		n2 = atoi(argv[2]);
 		printf("%i\n", n1 * n2);
 		return (0);
 	}
