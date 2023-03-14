@@ -14,8 +14,17 @@
 
 char *_strdup(char *str)
 {
-	unsigned long int i;
-	char *strMalloc = malloc(sizeof(str));
+	char *strMalloc;
+	unsigned int i;
+	unsigned int counter = 0; 
+
+	while (*str != '\0')
+	{
+		counter++;
+		*str++;
+	}
+
+	strMalloc = malloc(sizeof(char) * counter);
 
 	if (str == NULL || strMalloc == NULL)
 	{
@@ -23,7 +32,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (i = 0; i < sizeof(str); i++)
+		for (i = 0; i < counter; i++)
 		{
 			strMalloc[i] = str[i];
 		}
