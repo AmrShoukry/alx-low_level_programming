@@ -14,9 +14,8 @@
 
 char *_strdup(char *str)
 {
-	unsigned int i;
+	unsigned long int i;
 	char *strMalloc = malloc(sizeof(str));
-printf("size:%li",sizeof(str));
 
 	if (str == NULL || strMalloc == NULL)
 	{
@@ -24,7 +23,7 @@ printf("size:%li",sizeof(str));
 	}
 	else
 	{
-		for (i = 0; i < sizeof(*str); i++)
+		for (i = 0; i < sizeof(str); i++)
 		{
 			strMalloc[i] = str[i];
 		}
