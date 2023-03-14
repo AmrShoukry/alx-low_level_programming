@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[counter2] != '\0')
 		counter2++;
 	counter2++;
-	
+
 	strMalloc = malloc(sizeof(char) * (counter1 + counter2));
 
 	if (strMalloc == NULL)
