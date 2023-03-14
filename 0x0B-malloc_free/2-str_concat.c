@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 		counter2 = 1;
 	}
 
-	strMalloc = malloc(sizeof(char) * counter);
+	strMalloc = malloc(sizeof(char) * (counter1 + counter2));
 
 	if (strMalloc == NULL)
 		return (NULL);
