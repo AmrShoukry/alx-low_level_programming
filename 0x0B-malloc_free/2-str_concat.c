@@ -20,24 +20,18 @@ char *str_concat(char *s1, char *s2)
 	unsigned int counter1 = 0;
 	unsigned int counter2 = 0;
 
-	if (s1 != NULL)
-		while (s1[counter1] != '\0')
-			counter1++;
-	else
-		counter1 = 0;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if (s2 != NULL)
-	{
-		while (s2[counter2] != '\0')
-			counter2++;
+	while (s1[counter1] != '\0')
+		counter1++;
+
+	while (s2[counter2] != '\0')
 		counter2++;
-	}
-	else
-	{
-		s2[0] = '\0';
-		counter2 = 1;
-	}
-
+	counter2++;
+	
 	strMalloc = malloc(sizeof(char) * (counter1 + counter2));
 
 	if (strMalloc == NULL)
