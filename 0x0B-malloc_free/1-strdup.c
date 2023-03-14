@@ -16,6 +16,7 @@ char *_strdup(char *str)
 {
 	unsigned int i;
 	char *strMalloc = malloc(sizeof(*str));
+printf("size:%i",sizeof(*str));
 
 	if (str == NULL || strMalloc == NULL)
 	{
