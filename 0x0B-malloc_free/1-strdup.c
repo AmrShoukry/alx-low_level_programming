@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	unsigned int counter = 0;
 
 	if (str != NULL)
-	{ 
+	{
 		while (str[counter] != '\0')
 		{
 			counter++;
