@@ -24,6 +24,7 @@ char *_strdup(char *str)
 		{
 			counter++;
 		}
+		counter++;
 	}
 	else
 	{
