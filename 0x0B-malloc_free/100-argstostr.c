@@ -31,7 +31,6 @@ char *argstostr(int ac, char **av)
 				charCount++;
 			}
 			counter++;
-			overall++;
 		}
 		str = malloc(sizeof(char) * overall);
 		overall = 0;
