@@ -30,13 +30,14 @@ char *argstostr(int ac, char **av)
 				overall++;
 				charCount++;
 			}
+			charCount = 0;
 			counter++;
+			overall++;
 		}
 		str = malloc(sizeof(char) * overall);
 		overall = 0;
 		counter = 0;
 		charCount = 0;
-
 		while (counter < ac)
 		{
 			while (av[counter][charCount] != '\0')
