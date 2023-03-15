@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 	}
 	else
 	{
-		str = malloc(sizeof(int) * ac * sizeof(* av))
+		str = malloc(sizeof(int) * ac * sizeof(* av));
 		while (counter < ac)
 		{
 			while (av[counter][charCount] != '\0')
