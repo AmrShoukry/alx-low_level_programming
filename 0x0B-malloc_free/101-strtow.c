@@ -42,6 +42,7 @@ char **strtow(char *str)
 		while (str[overallCount] != ' ' || str[overallCount])
 		{
 			charCount++;
+			overallCount++;
 		}
 		stringArray[i] = (char *) malloc(sizeof(char) * charCount);
 		overallCount++;
