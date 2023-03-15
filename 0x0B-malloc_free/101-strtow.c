@@ -46,7 +46,6 @@ char **strtow(char *str)
 		overallCount++;
 		charCount = 0;
 	}
-	stringArray[i] = (char *) malloc(sizeof(char) * 1);
 
 	return (stringArray);
 }
