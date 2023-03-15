@@ -31,7 +31,7 @@ char **strtow(char *str)
 			wordCount++;
 		}
 	}
-	stringArray = malloc(sizeof(*char) * (wordCount + 1));
+	stringArray = malloc(sizeof(char *) * (wordCount + 1));
 
 	overallCount = 0;
 	charCount = 0;
