@@ -19,7 +19,7 @@ char **strtow(char *str)
 	int charCount = 0;
 	int overallCount = 0;
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -33,7 +33,8 @@ char **strtow(char *str)
 	}
 	stringArray = malloc(sizeof(*char) * (wordCount + 1));
 
-	overall = charCount = 0;
+	overall = 0;
+	charCount = 0;
 
 	for (i = 0; i < wordCount; i++)
 	{
@@ -45,5 +46,5 @@ char **strtow(char *str)
 		overallCount++;
 		charCount = 0;
 	}
-	stringArray[i] = malloc(sizeod(char) * 1);
+	stringArray[i] = malloc(sizeof(char) * 1);
 }
