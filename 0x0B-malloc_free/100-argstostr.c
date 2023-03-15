@@ -36,13 +36,11 @@ char *argstostr(int ac, char **av)
 				charCount++;
 			}
 			charCount = 0;
-			counter++
+			counter++;
 
 			str[overall] = '\n';
 			overall++;
 		}
 		str[overall] = '\0';
 	}
-
-	
 }
