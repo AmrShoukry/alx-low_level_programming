@@ -14,7 +14,6 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i;
 	char *str;
 	int counter = 0;
 	int charCount = 0;
@@ -43,4 +42,6 @@ char *argstostr(int ac, char **av)
 		}
 		str[overall] = '\0';
 	}
+
+	return str;
 }
