@@ -20,14 +20,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int b)
 	unsigned int counter1 = 0;
 	unsigned int counter2 = 0;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	while (s1[counter1] != '\0')
-	{
 		counter1++;
-	}
 	while (s2[counter2] != '\0')
-	{
 		counter2++;
-	}
 	if (counter2 > b)
 	{
 		counter2 = b;
