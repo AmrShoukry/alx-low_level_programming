@@ -16,9 +16,9 @@
 char *string_nconcat(char *s1, char *s2, unsigned int b)
 {
 	char *ptr;
-	int i;
-	int counter1 = 0;
-	int counter2 = 0;
+	unsigned int i;
+	unsigned int counter1 = 0;
+	unsigned int counter2 = 0;
 
 	while (s1[counter1] != '\0')
 	{
