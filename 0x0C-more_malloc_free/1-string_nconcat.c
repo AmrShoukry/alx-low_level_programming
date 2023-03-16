@@ -43,11 +43,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int b)
 	{
 		for (i = 0; i < counter1; i++)
 		{
-			ptr[i] = s1[counter1];
+			ptr[i] = s1[i];
 		}
 		for (i = 0; i < counter2; i++)
 		{
-			ptr[i + counter1] = s2[counter2];
+			ptr[i + counter1] = s2[i];
 		}
 		ptr[i + counter1] = '\0';
 
