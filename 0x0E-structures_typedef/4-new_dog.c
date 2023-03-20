@@ -21,31 +21,31 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	d = malloc(sizeof(struct dog));
 
-	if (d == NULL || name == NULL)
+	if (d == NULL)
 	{
-		free(d);
 		return (NULL);
 	}
 
-	else
-	{
-		d->name = malloc(sizeof(char) * (strlen(name) + 1));
-		strcpy(d->name, name);
-	}
+	d->name = malloc(sizeof(char) * (strlen(name) + 1));
 
-	if (owner == NULL)
+	if (d->name == NULL)
+	{
+		free (d);
+		return (NULL);
+	}
+	
+	d->owner = malloc (sizeof(char) * (strlen(owner) + 1));
+
+	if (d->owner == NULL)
 	{
 		free(d);
 		free(d->name);
 		return (NULL);
 	}
-	else
-	{
-		d->owner = malloc(sizeof(char) * (strlen(owner) + 1));
-		strcpy(d->owner, owner);
-	}
 
 	d->age = age;
+	strcpy(d->name, name);
+	strcpy(d->owner, owner);
 
 	return (d);
 }
