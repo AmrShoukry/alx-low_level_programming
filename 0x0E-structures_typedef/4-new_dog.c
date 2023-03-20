@@ -1,5 +1,7 @@
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
+
 
 /**
  * new_dog - Entry point
@@ -16,12 +18,6 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
-
-	if (name == NULL || owner == NULL)
-	{
-		return (NULL);
-	}
-
 	d = malloc(sizeof(struct dog));
 
 	if (d == NULL)
@@ -29,9 +25,27 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	d->name = name;
+	if (name == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		d->name = malloc(sizeof(char) * strlen(name));
+		strcpy(name, d->name);
+	}
+
+	if (owner == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		d->owner = malloc(sizeof(char) * strlen(owner));
+		strcpy(owner, d->owner);
+	}
+
 	d->age = age;
-	d->owner = owner;
 
 	return (d);
 }
