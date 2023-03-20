@@ -32,7 +32,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	else
 	{
-		d->name = malloc(sizeof(char) * strlen(name));
+		d->name = malloc(sizeof(char) * (strlen(name) + 1));
 		strcpy(d->name, name);
 	}
 
@@ -42,7 +42,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	else
 	{
-		d->owner = malloc(sizeof(char) * strlen(owner));
+		d->owner = malloc(sizeof(char) * (strlen(owner) + 1));
 		strcpy(d->owner, owner);
 	}
 
