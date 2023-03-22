@@ -32,10 +32,13 @@ int main(int argc, char *argv[])
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
 
-	if (strcmp(s, "+") != 0 && strcmp(s, "-") != 0 && strcmp(s, "*") != 0 && strcmp(s, "/") != 0 && strcmp(s, "%") != 0)
+	if (strcmp(s, "+") != 0 && strcmp(s, "-") != 0 && strcmp(s, "*") != 0)
 	{
-		printf("Error\n");
-		exit(99);
+		if (strcmp(s, "/") != 0 && strcmp(s, "%") != 0)
+		{
+			printf("Error\n");
+			exit(99);
+		}
 	}
 
 	result = get_op_func(s)(n1, n2);
