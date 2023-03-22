@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <stdio.h>
+#include "3-calc.h"
 
 /**
  * op_add - Struct op
@@ -84,7 +86,7 @@ int op_div(int a, int b)
  * Return: nothing
  */
 
-int op_div(int a, int b)
+int op_mod(int a, int b)
 {
 	if (b == 0)
 	{
