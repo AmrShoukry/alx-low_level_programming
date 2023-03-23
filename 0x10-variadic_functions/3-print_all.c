@@ -14,14 +14,12 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, counter = 0;
 	va_list ap;
-	char *sep = ", ", *text;
+	char *sep = "", *text;
 
 	va_start(ap, format);
 	while (format[i] != '\0')
 	{
-		if (counter == 0)
-			sep = "";
-		else
+		if (counter != 0)
 			sep = ", ";
 
 		switch (format[i])
