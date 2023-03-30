@@ -3,10 +3,9 @@
 #include "lists.h"
 
 /**
- * add_node - function
+ * list_len - function
  *
- * @head: header
- * @str: string
+ * @h: header
  *
  * Description: print
  *
@@ -14,22 +13,15 @@
  */
 
 
-list_t *add_node(list_t **header, const char *str)
+size_t print_list(const list_t *h)
 {
-	const list_t *head = NULL;
+	size_t counter = 0;
+	const list_t *current = h;
 
-	head = (list_t *) malloc(sizeof(list_t));
-
-	if (head == NULL)
+	while (current != NULL)
 	{
-		return (NULL);
+		counter++;
+		current = current->next;
 	}
-	else
-	{
-		head->str = str;
-		head->next = *header;
-		*header = head;
-	}
-
-	return (*header);
+	return (counter);
 }
