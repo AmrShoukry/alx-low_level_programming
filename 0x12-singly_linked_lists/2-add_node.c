@@ -24,6 +24,7 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		i++;
 	}
+
 	header = malloc(sizeof(list_t));
 
 	if (!header)
@@ -32,7 +33,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	else
 	{
-		header->str = strdup(str);	
+		header->str = strdup(str);
 		header->len = i;
 		header->next = *head;
 		*head = header;
