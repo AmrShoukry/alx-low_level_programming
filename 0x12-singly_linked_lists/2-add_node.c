@@ -20,6 +20,10 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *header;
 	unsigned int i = 0;
 
+	while (str[i] != '\0')
+	{
+		i++;
+	}
 	header = malloc(sizeof(list_t));
 
 	if (!header)
@@ -28,11 +32,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	else
 	{
-		header->str = strdup(str);
-		while (header->str[i] != '\0')
-		{
-			i++;
-		}
+		header->str = strdup(str);	
 		header->len = i;
 		header->next = *head;
 		*head = header;
