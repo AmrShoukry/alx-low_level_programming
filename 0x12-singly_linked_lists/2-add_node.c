@@ -6,7 +6,7 @@
 /**
  * add_node - function
  *
- * @head: header
+ * @header: header
  * @str: string
  *
  * Description: print
@@ -22,7 +22,7 @@ list_t *add_node(list_t **header, const char *str)
 
 	head = (list_t *) malloc(sizeof(list_t));
 
-	if (head == NULL)
+	if (head == NULL || *header == NULL)
 	{
 		return (NULL);
 	}
