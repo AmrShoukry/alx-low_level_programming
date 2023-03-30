@@ -1,17 +1,14 @@
-void beforeMain __attribute__ ((constructor));
+#include <stdio.h>
+
+void beforeMain(void) __attribute__ ((constructor));
 
 /**
- * beforeMain - function
- *
- * Description: print
- *
- * Return: Always (0);
+ * beforeMain - prints
+ * function is executed
  */
-
 
 void beforeMain(void)
 {
-	char *string = "You're beat! and yet, ";
-
-	printf("%syou must allow,\nI bore my house upon my back!\n", string);
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
