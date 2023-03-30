@@ -20,9 +20,9 @@ list_t *add_node(list_t **header, const char *str)
 	list_t *head = NULL;
 	unsigned int i = 0;
 
-	head = (list_t *) malloc(sizeof(list_t));
+	head = malloc(sizeof(list_t));
 
-	if (head == NULL || header == NULL)
+	if (head == NULL)
 	{
 		return (NULL);
 	}
