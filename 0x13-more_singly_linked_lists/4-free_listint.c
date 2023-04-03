@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * free_list - function
+ * free_listint - function
  *
  * @head: header
  *
