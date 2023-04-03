@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node_end - function
+ * add_nodeint_end - function
  *
  * @head: header
  * @n: number
