@@ -7,7 +7,7 @@
  * add_nodeint - function
  *
  * @head: header
- * @str: string
+ * @n: number
  *
  * Description: print
  *
@@ -17,6 +17,7 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *header;
+
 	header = malloc(sizeof(listint_t));
 
 	if (header == NULL)
