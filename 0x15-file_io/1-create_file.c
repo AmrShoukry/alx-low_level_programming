@@ -33,7 +33,7 @@ int create_file(const char *filename, char *text_content)
 	else
 	{
 		file_fd = open(filename, O_WRONLY);
-		truncate_fd = truncate(file_fd, 0);
+		truncate_fd = truncate(filename, 0);
 	}
 
 	if (text_content != NULL)
