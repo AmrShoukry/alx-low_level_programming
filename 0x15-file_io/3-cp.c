@@ -20,8 +20,8 @@
 
 int main(int argc, char *argv[])
 {
-	int fileTo_fd, fileFrom_fd, truncate_fd, closeFileTo_fd, closeFileFrom_fd;
-	int write_fd, read_fd;
+	int fileTo_fd, fileFrom_fd, closeFileTo_fd, closeFileFrom_fd, read_fd;
+	int write_fd;
 	char text[1024];
 
 	if (argc != 3)
