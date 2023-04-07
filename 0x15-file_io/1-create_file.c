@@ -41,7 +41,7 @@ int create_file(const char *filename, char *text_content)
 		write_fd = write(file_fd, text_content, strlen(text_content));
 	}
 
-	if (file_fd == -1 || truncate_fd == -1|| write_fd == 1)
+	if (file_fd == -1 || truncate_fd == -1 || write_fd == 1)
 	{
 		return (-1);
 	}
