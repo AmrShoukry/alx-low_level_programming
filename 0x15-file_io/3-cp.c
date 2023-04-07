@@ -30,23 +30,13 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	fileFrom_fd = open(argv[1], O_RDONLY);
-	fileTo_fd = open(argv[2], O_WRONLY | O_APPEND);
+	fileTo_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fileFrom_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (fileTo_fd == -1)
-	{
-		fileTo_fd = creat(argv[2], 0664);
-		if (fileTo_fd == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			exit(99);
-		}
-	}
-	truncate_fd = truncate(argv[2], 0);
-	if (truncate_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
