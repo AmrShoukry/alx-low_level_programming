@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	fileFrom_fd = open(argv[1], O_RDONLY);
-	fileTo_fd = open(argv[2], O_WRONLY);
+	fileTo_fd = open(argv[2], O_WRONLY | O_APPEND);
 	if (fileFrom_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
