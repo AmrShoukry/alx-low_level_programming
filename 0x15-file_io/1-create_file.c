@@ -20,6 +20,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int file_fd;
 	int write_fd;
+	int truncate_fd;
 
 	if (filename == NULL)
 	{
@@ -32,6 +33,7 @@ int create_file(const char *filename, char *text_content)
 	else
 	{
 		file_fd = open(filename, O_WRONLY);
+		truncate_fd = truncate(file_fd, 0);
 	}
 
 	if (text_content != NULL)
@@ -39,7 +41,7 @@ int create_file(const char *filename, char *text_content)
 		write_fd = write(file_fd, text_content, strlen(text_content));
 	}
 
-	if (file_fd == -1 || write_fd == 1 || filename == NULL)
+	if (file_fd == -1 || truncate_fd == -1|| write_fd == 1)
 	{
 		return (-1);
 	}
