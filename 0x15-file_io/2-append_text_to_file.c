@@ -19,6 +19,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int file_fd;
+	int write_fd;
 
 	if (access(filename, F_OK) == -1 || filename == NULL)
 	{
@@ -28,10 +29,10 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		fputs(text_content, file_fd)
+		write_fd = write(file_fd, text_content, strlen(text_content));
 	}
 
-	if (file_fd == -1)
+	if (file_fd == -1 || write_fd == -1)
 	{
 		return (-1);
 	}
