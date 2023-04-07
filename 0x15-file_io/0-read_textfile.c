@@ -18,8 +18,8 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *string = malloc(sizeof(char) * letters);
-	int open_fd = open(filename, r, O_RDONLY);
-	int read_fd = read(open_fd, str, letters);
+	int open_fd = open(filename, O_RDONLY);
+	int read_fd = read(open_fd, string, letters);
 	int write_fd = write(1, string, letters);
 
 	if (filename == NULL || open_fd == -1 || read_fd == -1 || write_fd == -1)
@@ -27,5 +27,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	return (write_fd);
+	return (read_fd);
 }
