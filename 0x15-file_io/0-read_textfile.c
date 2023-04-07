@@ -24,8 +24,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL || open_fd == -1 || read_fd == -1 || write_fd == -1)
 	{
+		free(string);
+		close(open_fd);
 		return (0);
 	}
 
+	free(string);
+	close(open_fd);
 	return (read_fd);
 }
