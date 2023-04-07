@@ -18,10 +18,10 @@
  * Return: Always 0 (Success)
  */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int fileTo_fd, fileFrom_fd, truncate_fd, closeFileTo_fd, closeFileFrom_fd;
-	int write_fd, int read_fd;
+	int write_fd, read_fd;
 	char text[1024];
 
 	if (argc != 3)
@@ -67,4 +67,5 @@ void main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", -1);
 		exit(100);
 	}
+	return (0);
 }
