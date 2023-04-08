@@ -28,7 +28,6 @@ void print_binary(unsigned long int n)
 	if (n == 0)
 	{
 		_putchar('0');
-		_putchar('\n');
 		return;
 	}
 	
@@ -36,7 +35,6 @@ void print_binary(unsigned long int n)
 	for (i = length - 1; i >= 0; i--)
 	{
 		digit = (n >> i) & 1;
-		_putchar(digit);
+		_putchar(digit + 48);
 	}
-	_putchar('\n');
 }
