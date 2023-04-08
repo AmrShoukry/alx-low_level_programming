@@ -5,8 +5,6 @@
 #include <fcntl.h>
 #include <string.h>
 
-
-
 /**
  * main - Entry point
  *
