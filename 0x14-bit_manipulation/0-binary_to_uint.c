@@ -34,11 +34,12 @@ unsigned int binary_to_uint(const char *b)
 			temp = 0;
 			result = 1;
 			power = len - i - 1;
-			while(temp < power)
+
+			while (temp < power)
 			{
 				result = result * 2;
 				temp++;
-			}			
+			}
 
 
 			num += (b[i] - 48) * result;
