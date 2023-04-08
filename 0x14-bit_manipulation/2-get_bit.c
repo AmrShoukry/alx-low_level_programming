@@ -41,6 +41,11 @@ int get_bit(unsigned long int n, unsigned int index)
 	number = n;
 	text = malloc(sizeof(int) * length);
 
+	if (text == NULL)
+	{
+		return (-1);
+	}
+
 	for (i = 0; i < length; i++)
 	{
 		remainder = number % 2;
@@ -49,5 +54,4 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 
 	return (*(text + index));
-	
 }
