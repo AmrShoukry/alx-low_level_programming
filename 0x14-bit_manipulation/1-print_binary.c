@@ -30,7 +30,6 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	
 
 	for (i = length - 1; i >= 0; i--)
 	{
