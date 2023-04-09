@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * set_bit - function
+ * clear_bit - function
  *
  * @n: header
  * @index: num
@@ -15,7 +15,7 @@
  * Return: Always (0);
  */
 
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int i = 0, power = 1, temp = 0, result = 0, number = *n;
 	unsigned long int length = 0;
