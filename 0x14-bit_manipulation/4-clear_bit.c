@@ -14,7 +14,8 @@
  *
  * Return: Always (0);
  */
-int clear_bit(unsigned long int *n, unsigned int index)
+
+int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int i = 0, power = 1, temp = 0, result = 0, number = *n;
 	unsigned long int length = 0;
@@ -47,3 +48,12 @@ int clear_bit(unsigned long int *n, unsigned int index)
 			*(text + index) = 0;
 		}
 		while (temp < i)
+		{
+			power = power * 2;
+			temp++;
+		}
+		result = result + (power * (*(text + i)));
+	}
+	*n = result;
+	return (1);
+}
