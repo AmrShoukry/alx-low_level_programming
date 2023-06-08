@@ -33,7 +33,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
     while (wanted_node != NULL)
     {
         if (strcmp(wanted_node->key, key) == 0)
-            return wanted_node->value;
+            return (wanted_node->value);
         wanted_node = wanted_node->next;
     }
     return (NULL);

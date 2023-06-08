@@ -4,9 +4,9 @@
  * hash_table_create - Function
  *
  * Description: 'A function'
- * 
+ *
  * @size: parameter
- * 
+ *
  * Return: return value
  */
 

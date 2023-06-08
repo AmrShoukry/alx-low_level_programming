@@ -53,16 +53,13 @@ shash_table_t *shash_table_create(unsigned long int size)
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
     unsigned long int index;
-    shash_node_t *new_node;
-    shash_node_t *temp;
+    shash_node_t *new_node, *temp;
     char *key_copy = strdup(key);
     char *value_copy = strdup(value);
 
     if (key == NULL || value == NULL || ht == NULL)
-        return (0);
-    
+        return (0);   
     index = key_index((const unsigned char *)key, ht->size - 1);
-
     new_node = malloc(sizeof(shash_node_t));
     new_node->key = key_copy;
     new_node->value = value_copy;
@@ -95,7 +92,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
     }
     shash_sorted_list(ht, new_node);
     return (1);
-
 }
 
 
@@ -106,15 +102,12 @@ void shash_sorted_list(shash_table_t *ht, shash_node_t *sent_node)
     shash_node_t *temp;
     shash_node_t *new_node;
 
-
     new_node = malloc(sizeof(shash_node_t));
-
     new_node->key = strdup(sent_node->key);
     new_node->value = strdup(sent_node->value);
     new_node->next = NULL;
     new_node->snext = NULL;
     new_node->sprev = NULL;
-
     if (ht->array[ht->size - 1] == NULL)
     {
         ht->array[ht->size - 1] = new_node;
@@ -125,7 +118,6 @@ void shash_sorted_list(shash_table_t *ht, shash_node_t *sent_node)
     {
         current = ht->array[ht->size - 1];
         temp = current;
-
         if((int)new_node->key[0] < (int)current->key[0])
         {
             new_node->next = ht->array[ht->size - 1];
@@ -239,6 +231,16 @@ void shash_table_print(const shash_table_t *ht)
 }
 
 
+/**
+ * shash_table_print_rev - Function
+ *
+ * Description: 'A function'
+ *
+ * @ht: parameter
+ *
+ * Return: return value
+ */
+
 
 void shash_table_print_rev(const shash_table_t *ht)
 {
@@ -251,6 +253,20 @@ void shash_table_print_rev(const shash_table_t *ht)
 
     printf("}\n");
 }
+
+
+
+
+/**
+ * print_recursive - Function
+ *
+ * Description: 'A function'
+ *
+ * @node: parameter
+ *
+ * Return: return value
+ */
+
 
 void print_recursive(shash_node_t *node)
 {
