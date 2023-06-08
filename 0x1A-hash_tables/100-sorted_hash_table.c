@@ -106,6 +106,7 @@ void shash_sorted_list(shash_table_t *ht, shash_node_t *sent_node)
     shash_node_t *temp;
     shash_node_t *new_node;
 
+
     new_node = malloc(sizeof(shash_node_t));
 
     new_node->key = strdup(sent_node->key);
@@ -123,27 +124,27 @@ void shash_sorted_list(shash_table_t *ht, shash_node_t *sent_node)
     else
     {
         current = ht->array[ht->size - 1];
-        while (current->next != NULL)
+        temp = current;
+
+        if((int)new_node->key[0] < (int)current->key[0])
         {
+            new_node->next = ht->array[ht->size - 1];
+            ht->array[ht->size - 1] = new_node;
+            return;
+        }
+        current = current->next;
+        while (current != NULL)
+        {
+            if((int)new_node->key[0] < (int)current->key[0])
+            {
+                temp->next = new_node;
+                new_node->next = current;
+                return;
+            }
             temp = current;
             current = current->next;
         }
-        if((int)new_node->key[0] > (int)current->key[0])
-        {
-            current->next = new_node;
-            sent_node->sprev = current;
-            sent_node->snext = NULL;
-            ht->stail = sent_node;
-        }
-        else
-        {
-            temp->next = new_node;
-            new_node->next = current;
-            sent_node->sprev = temp;
-            sent_node->snext = current;
-            ht->stail = current;
-        }
-        ht->shead = ht->array[ht->size - 1];
+        temp->next = new_node;
     }
 }
 
@@ -225,7 +226,14 @@ void shash_table_print(const shash_table_t *ht)
         }
         else
             printf(", '%s': '%s'", node->key, node->value);
+/*
+        if (strcmp(node->key, "j") == 0)
+            exit(0);
+        else
+            printf("key: %s\n\n", node->key);
+*/
         node = node->next;
+
     }
     printf("}\n");
 }
