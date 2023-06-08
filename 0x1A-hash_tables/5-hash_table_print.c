@@ -31,10 +31,10 @@ void hash_table_print(const hash_table_t *ht)
 			if (first_ocuurence == 0)
 			{
 				first_ocuurence = 1;
-				printf("'%s': '%s'", node->key, node->value, i);
+				printf("'%s': '%s'", node->key, node->value);
 			}
 			else
-				printf(", '%s': '%s'", node->key, node->value, i);
+				printf(", '%s': '%s'", node->key, node->value);
 			node = node->next;
 			i++;
 		}
