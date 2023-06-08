@@ -96,11 +96,20 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 
 
+/**
+ * shash_sorted_list - Function
+ *
+ * Description: 'A function'
+ *
+ * @ht: parameter
+ * @sent_node: parameter
+ *
+ * Return: return value
+ */
+
 void shash_sorted_list(shash_table_t *ht, shash_node_t *sent_node)
 {
-	shash_node_t *current;
-	shash_node_t *temp;
-	shash_node_t *new_node;
+	shash_node_t *current, *temp, *new_node;
 
 	new_node = malloc(sizeof(shash_node_t));
 	new_node->key = strdup(sent_node->key);
@@ -108,36 +117,35 @@ void shash_sorted_list(shash_table_t *ht, shash_node_t *sent_node)
 	new_node->next = NULL;
 	new_node->snext = NULL;
 	new_node->sprev = NULL;
-	if (ht->array[ht->size - 1] == NULL)
+
+	current = ht->array[ht->size - 1];
+	temp = NULL;
+
+	while (current != NULL && (int)new_node->key[0] >= (int)current->key[0])
 	{
+		temp = current;
+		current = current->next;
+	}
+
+	if (temp == NULL)
+	{
+		new_node->next = ht->array[ht->size - 1];
 		ht->array[ht->size - 1] = new_node;
-		sent_node->snext = NULL;
+		sent_node->snext = current;
 		sent_node->sprev = NULL;
+		ht->shead = new_node;
 	}
 	else
 	{
-		current = ht->array[ht->size - 1];
-		temp = current;
-		if ((int)new_node->key[0] < (int)current->key[0])
-		{
-			new_node->next = ht->array[ht->size - 1];
-			ht->array[ht->size - 1] = new_node;
-			return;
-		}
-		current = current->next;
-		while (current != NULL)
-		{
-			if ((int)new_node->key[0] < (int)current->key[0])
-			{
-				temp->next = new_node;
-				new_node->next = current;
-				return;
-			}
-			temp = current;
-			current = current->next;
-		}
 		temp->next = new_node;
+		new_node->next = current;
+		sent_node->sprev = temp;
+		sent_node->snext = current;
 	}
+
+	if (current == NULL)
+		ht->stail = new_node;
+
 }
 
 
