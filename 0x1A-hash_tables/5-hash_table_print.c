@@ -24,25 +24,18 @@ void hash_table_print(const hash_table_t *ht)
 
 	while (i < ht->size)
 	{
-		if (ht->array[i] == NULL)
+		node = ht->array[i];
+
+		while (node != NULL)
 		{
-			i++;
-			continue;
-		}
-		else
-		{
-			node = ht->array[i];
 			if (first_ocuurence == 0)
 			{
 				first_ocuurence = 1;
-				printf("'%s': '%s' i = %lu\n", node->key, node->value, i);
-				node = node->next;
+				printf("'%s': '%s'", node->key, node->value, i);
 			}
-			while (node != NULL)
-			{
-				printf(", '%s': '%s' i = %lu\n", node->key, node->value, i);
-				node = node->next;
-			}
+			else
+				printf(", '%s': '%s'", node->key, node->value, i);
+			node = node->next;
 			i++;
 		}
 	}
