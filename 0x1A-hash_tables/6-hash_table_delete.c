@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - Function
+ * hash_table_delete - Function
  *
  * Description: 'A function'
  *
