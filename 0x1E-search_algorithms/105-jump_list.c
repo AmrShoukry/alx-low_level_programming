@@ -19,7 +19,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	int last_min = -1;
 	listint_t *current, *pre_current;
 
-	if (list == NULL)
+	if (list == NULL || size == 0)
 		return (NULL);
 	if (list->n == value)
 		return (list);
