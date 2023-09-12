@@ -51,5 +51,7 @@ int get_index(int *array, int start, int end, int value)
 
 int interpolation_search(int *array, size_t size, int value)
 {
+	if (array == NULL)
+		return (-1);
 	return (get_index(array, 0, (int) size - 1, value));
 }
